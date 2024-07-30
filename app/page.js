@@ -25,7 +25,7 @@ export default function Home() {
               </a>
               .
               <br />
-              Stay tuned for updates, and we'll be back online shortly!
+              Stay tuned for updates, and we&rsquo;ll be back online shortly!
             </p>
             <p>- The Craftwarelab Team</p>
           </div>
