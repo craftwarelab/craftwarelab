@@ -7,7 +7,7 @@ export default function Home() {
         <div>
           <div className="flex flex-col items-center text-center gap-4">
             {/* <Image src="/logo4.png" alt="Logo" width={300} height={50} /> */}
-            <h2 className="text-3xl font-bold">We'll Be Right Back!</h2>
+            <h2 className="text-3xl font-bold">We&rsquo;ll Be Right Back!</h2>
             <p>
               Our website is currently undergoing scheduled maintenance to bring
               you an even better experience. We apologize for any inconvenience
