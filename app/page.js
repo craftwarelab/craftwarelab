@@ -1,3 +1,4 @@
+"use client";
 // import Image from "next/image";
 import { NextUIProvider } from "@nextui-org/react";
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
@@ -7,11 +8,161 @@ import Services from "@/Components/Services";
 import Solution from "@/Components/Solution";
 import ContactUs from "@/Components/ContactUs";
 import Footer from "@/Components/Footer";
+import { useState } from "react";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
+  Link,
+  Button,
+} from "@nextui-org/react";
+import { Logo } from "@/Components/Logo";
+
 export default function Home() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const menuItems = ["about", "services", "solutions"];
   return (
     <NextUIProvider>
       {/* <NavBar /> */}
+      <div>
+        {/* <Hello /> */}
+        <Navbar
+          isBordered
+          isMenuOpen={isMenuOpen}
+          onMenuOpenChange={setIsMenuOpen}
+          classNames={{
+            item: [
+              "flex",
+              "relative",
+              "h-full",
+              "items-center",
+              "data-[active=true]:after:content-['']",
+              "data-[active=true]:after:absolute",
+              "data-[active=true]:after:bottom-0",
+              "data-[active=true]:after:left-0",
+              "data-[active=true]:after:right-0",
+              "data-[active=true]:after:h-[2px]",
+              "data-[active=true]:after:rounded-[2px]",
+              "data-[active=true]:after:bg-primary",
+            ],
+          }}
+        >
+          <NavbarContent className="sm:hidden" justify="start">
+            <NavbarMenuToggle
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+            />
+          </NavbarContent>
+
+          <NavbarContent className="sm:hidden pr-3" justify="center">
+            <NavbarBrand>
+              <a href="#">
+                <Logo />
+              </a>
+              {/* <p className="font-bold text-inherit">ACME</p> */}
+            </NavbarBrand>
+          </NavbarContent>
+
+          <NavbarContent
+            className="hidden sm:flex gap-4 uppercase"
+            justify="center"
+          >
+            <NavbarBrand>
+              <Logo />
+              {/* <p className="font-bold text-inherit">ACME</p> */}
+            </NavbarBrand>
+            <NavbarItem>
+              <Link color="foreground" href="#about">
+                About
+              </Link>
+            </NavbarItem>
+            <NavbarItem>
+              <Link color="foreground" href="#services">
+                Services
+              </Link>
+            </NavbarItem>
+            {/* <NavbarItem isActive>
+                        <Link href="#" aria-current="page">
+                            Customers
+                        </Link>
+                    </NavbarItem> */}
+            <NavbarItem>
+              <Link color="foreground" href="#solutions">
+                Solutions
+              </Link>
+            </NavbarItem>
+          </NavbarContent>
+
+          <NavbarContent justify="end" className="uppercase">
+            <NavbarItem>
+              <Button as={Link} color="warning" href="#contact" variant="flat">
+                CONTACT
+              </Button>
+            </NavbarItem>
+          </NavbarContent>
+
+          <NavbarMenu className="bg-white uppercase">
+            {menuItems.map((item, index) => (
+              <NavbarMenuItem key={`${item}-${index}`}>
+                <Link
+                  className="w-full"
+                  color={
+                    index === 2
+                      ? "warning"
+                      : index === menuItems.length - 1
+                      ? "danger"
+                      : "foreground"
+                  }
+                  href={`#${item}`}
+                  size="lg"
+                  onPress={() => setIsMenuOpen(false)}
+                >
+                  {item}
+                </Link>
+              </NavbarMenuItem>
+            ))}
+          </NavbarMenu>
+        </Navbar>
+      </div>
       {/* <MainHeader /> */}
+      <div className="flex items-center h-screen my-auto bg-[#FFF5E6]">
+        <div className="p-5 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-3 ">
+            <div className="p-5 flex md:justify-center md:items-center flex-col">
+              <div className="text-start">
+                <p className="text-2xl md:text-4xl font-medium md:mb-4">
+                  Craftwarelab
+                </p>
+                <h2 className="text-6xl md:text-7xl font-extrabold text-wrap break-words md:mb-4">
+                  Crafting the
+                  <br /> Digital
+                  <br /> Landscape
+                </h2>
+                <span className="md:mb-2 brak-words text-sm font-light block">
+                  We build custom software, mobile apps, websites, and digital
+                  products.
+                </span>
+                <a href="#contact">
+                  <button className="p-2 bg-primary text-black font-semibold bg-[#feb400] break-words ">
+                    Start a Project
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div>
+              <img
+                className="top-0 left-0 w-full object-cover md:p-16 p-5"
+                src="/workmen.jpg"
+                alt="hero"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
       {/* <Services /> */}
       <div className="min-h-screen my-auto p-12 " id="services">
         <p className="text-2xl md:text-4xl font-medium md:mb-4 py-5 break-words text-wrap text-center">
