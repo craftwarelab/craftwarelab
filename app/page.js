@@ -14,7 +14,7 @@ export default function Home() {
       <Services />
       <Solution /> */}
       <ContactUs />
-      <main className="flex h-screen items-center justify-center my-auto">
+      <main className="flex h-screen items-center justify-center my-auto bg-amber-500">
         <div className="flex justify-center p-5 ">
           <div>
             <div className="flex flex-col items-center text-center gap-4">
@@ -43,7 +43,14 @@ export default function Home() {
           </div>
         </div>
       </main>
-
+      <footer className="footer footer-center  w-full p-4 bg-black text-white">
+                <div className="text-center">
+                    <p>
+                        Digitally crafted with 🖤 by Team&nbsp;
+                        <a className="font-semibold" href="#">Craftwarelab</a>
+                    </p>
+                </div>
+            </footer>
       <Footer />
     </NextUIProvider>
   );
