@@ -2,12 +2,12 @@
 // import Image from "next/image";
 import { NextUIProvider } from "@nextui-org/react";
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
-import NavBar from "@/Components/NavBar";
-import MainHeader from "@/Components/MainHeader";
-import Services from "@/Components/Services";
-import Solution from "@/Components/Solution";
-import ContactUs from "@/Components/ContactUs";
-import Footer from "@/Components/Footer";
+import NavBar from "@/components/NavBar";
+import MainHeader from "@/components/MainHeader";
+import Services from "@/components/Services";
+import Solution from "@/components/Solution";
+import ContactUs from "@/components/ContactUs";
+import Footer from "@/components/Footer";
 import { useState } from "react";
 import {
   Navbar,
@@ -20,7 +20,7 @@ import {
   Link,
   Button,
 } from "@nextui-org/react";
-import { Logo } from "@/Components/Logo";
+import { Logo } from "@/components/Logo";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -678,8 +678,8 @@ export default function Home() {
           </div>
         </div>
       </main> */}
-      {/* <Footer /> */}
-      <footer className="footer footer-center  w-full p-4 bg-black text-white">
+      <Footer />
+      {/* <footer className="footer footer-center  w-full p-4 bg-black text-white">
         <div className="text-center">
           <p>
             Digitally crafted with 🖤 by Team&nbsp;
@@ -688,7 +688,7 @@ export default function Home() {
             </a>
           </p>
         </div>
-      </footer>
+      </footer> */}
     </NextUIProvider>
   );
 }

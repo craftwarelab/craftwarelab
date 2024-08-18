@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Hello from "@/Components/Hello";
+import Hello from "@/components/Hello";
 import { useState } from "react";
 import {
     Navbar,
@@ -13,7 +13,7 @@ import {
     Link,
     Button,
 } from "@nextui-org/react";
-import { Logo } from "@/Components/Logo";
+import { Logo } from "@/components/Logo";
 
 
 const NavBar = () => {
