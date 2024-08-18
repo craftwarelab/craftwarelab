@@ -12,8 +12,8 @@ export default function Home() {
       {/* <NavBar />
       <MainHeader />
       <Services />
-      <Solution />
-      <ContactUs /> */}
+      <Solution /> */}
+      <ContactUs />
       <main className="flex h-screen items-center justify-center my-auto">
         <div className="flex justify-center p-5 ">
           <div>
