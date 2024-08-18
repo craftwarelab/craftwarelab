@@ -9,12 +9,12 @@ import Footer from "@/Components/Footer";
 export default function Home() {
   return (
     <NextUIProvider>
-      <NavBar />
+      {/* <NavBar />
       <MainHeader />
       <Services />
       <Solution />
-      <ContactUs />
-      {/* <main className="flex h-screen items-center justify-center my-auto">
+      <ContactUs /> */}
+      <main className="flex h-screen items-center justify-center my-auto">
         <div className="flex justify-center p-5 ">
           <div>
             <div className="flex flex-col items-center text-center gap-4">
@@ -42,9 +42,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </main> */}
+      </main>
 
-      <Footer />
+      {/* <Footer /> */}
     </NextUIProvider>
   );
 }
