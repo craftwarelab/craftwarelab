@@ -13,6 +13,7 @@ import {
   Link,
   Button,
 } from "@nextui-org/react";
+import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 import { Logo } from "@/Components/Logo";
 
 export default function Home() {
