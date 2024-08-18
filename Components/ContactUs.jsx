@@ -10,7 +10,7 @@ const ContactUs = () => {
                     <div className="my-6">
                         <div className="grid sm:grid-cols-2 items-center gap-10 p-8 mx-auto max-w-6xl bg-white shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md text-[#333] font-[sans-serif]">
                             <div className="p-9">
-                                <h1 className="text-3xl font-extrabold">Let's Talk</h1>
+                                <h1 className="text-3xl font-extrabold">Let&apos;s Talk</h1>
                                 <p className="text-sm text-gray-400 mt-3 break-words">
 
                                     We believe understanding you and your business will enable us to provide you the best solutions.
