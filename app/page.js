@@ -163,14 +163,115 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        {/* <About Us> */}
+        {/* <div className="min-h-screen my-auto p-12" id="about">
+          <p className="text-2xl md:text-4xl font-medium md:mb-4 py-5 break-words text-wrap text-center">
+            About Us
+          </p>
+          <div className="flex flex-col items-center justify-center ">
+            <div>test</div>
+          </div>
+        </div> */}
+
+        <div className="min-h-screen p-12" id="about">
+          <p className="text-2xl md:text-4xl font-medium md:mb-4 py-5 break-words text-wrap text-center">
+            About Us
+          </p>
+          <div className="flex flex-col items-center justify-center md:p-6">
+            <div className="grid grid-cols-1 md:grid-cols-8 gap-10 mx-3 ">
+              <div className="md:col-span-5 order-1 text-start px-6">
+                <div className="my-4">
+                  <p className="break-words text-wrap">
+                    At Craftwarelab, we are a dynamic team of tech enthusiasts
+                    dedicated to pushing the boundaries of digital innovation.
+                    Our team is composed of highly skilled and disciplined
+                    professionals, all of whom are graduates with a deep
+                    understanding of their respective fields. We specialize in
+                    crafting high quality digital products websites, apps, and
+                    more with the same precision and care as traditional
+                    artisans. Our focus is on delivering exceptional user
+                    experiences, ensuring that customer satisfaction is at the
+                    heart of everything we do. As we continue to grow, we are
+                    excited to expand our offerings, including the development
+                    of open-source products.
+                  </p>
+                </div>
+                <div className="my-4">
+                  <p className="text-2xl font-medium md:mb-4 break-words">
+                    Vision
+                  </p>
+                  <p>
+                    To be a leader in digital craftsmanship, leveraging
+                    cutting edge technology to create solutions that exceed
+                    client expectations and set new standards for quality and
+                    innovation.
+                  </p>
+                </div>
+                <div className="my-4">
+                  <p className="text-2xl font-medium md:mb-4 break-words">Mission</p>
+                  <p>
+                    Our mission is to deliver meticulously crafted digital
+                    products that exceed expectations and drive business
+                    success. We are dedicated to continuous learning and the
+                    exploration of emerging technologies, enabling us to stay
+                    ahead of industry trends. Through a disciplined and mindful
+                    approach, we aim to provide our clients with solutions that
+                    are both innovative and effective. Customer satisfaction is
+                    our ultimate goal, and we believe that our success is
+                    defined by the success of our clients. Looking ahead, we are
+                    committed to expanding our impact by developing open-source
+                    products that enhance our offerings.
+                  </p>
+                </div>
+              </div>
+              <div className="md:col-span-3 flex justify-center order-2">
+                <img
+                  className="top-0 left-0 w-full object-cover md:p-10 p-5"
+                  src="/mission.png"
+                  alt="hero"
+                />
+              </div>
+              {/* <div>
+              <div className="flex flex-col items-center text-center gap-4">
+                <h2 className="text-3xl font-bold">
+                  We&rsquo;ll Be Right Back!
+                </h2>
+                <p>
+                  Our website is currently undergoing scheduled maintenance to
+                  bring you an even better experience. We apologize for any
+                  inconvenience and appreciate your patience.
+                </p>
+                <p>
+                  If you have any urgent inquiries, please feel free to contact
+                  us at{" "}
+                  <a
+                    className="text-blue-500 hover:cursor-pointer"
+                    href="https://www.linkedin.com/company/craftwarelab"
+                    target="_blank"
+                  >
+                    linkedin
+                  </a>
+                  .
+                  <br />
+                  Stay tuned for updates, and we&rsquo;ll be back online
+                  shortly!
+                </p>
+                <p>- The Craftwarelab Team</p>
+              </div>
+            </div> */}
+            </div>
+          </div>
+        </div>
+
         {/* <Services /> */}
-        <div className="min-h-screen my-auto p-12 " id="services">
+        <div className="min-h-screen my-auto p-12 bg-[#FFF5E6]" id="services">
           <p className="text-2xl md:text-4xl font-medium md:mb-4 py-5 break-words text-wrap text-center">
             Services We Provide
           </p>
           <div className="flex flex-col items-center justify-center ">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-3 ">
-              <div className="p-2 flex md:justify-center md:items-center flex-col border rounded-md shadow-xl ">
+              <div className="p-2 flex md:justify-center md:items-center flex-col border rounded-md shadow-xl bg-white">
                 <Card className="py-4">
                   <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                     <p className="text-tiny uppercase font-bold">
@@ -197,7 +298,7 @@ export default function Home() {
                   </div>
                 </Card>
               </div>
-              <div className="p-2 flex md:justify-center md:items-center flex-col border rounded-md shadow-xl ">
+              <div className="p-2 flex md:justify-center md:items-center flex-col border rounded-md shadow-xl bg-white">
                 <Card className="py-4">
                   <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                     <p className="text-tiny uppercase font-bold">
@@ -224,7 +325,7 @@ export default function Home() {
                   </div>
                 </Card>
               </div>
-              <div className="p-2 flex md:justify-center md:items-center flex-col border rounded-md shadow-xl ">
+              <div className="p-2 flex md:justify-center md:items-center flex-col border rounded-md shadow-xl bg-white">
                 <Card className="py-4">
                   <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                     <p className="text-tiny uppercase font-bold">
@@ -251,7 +352,7 @@ export default function Home() {
                   </div>
                 </Card>
               </div>
-              <div className="p-2 flex md:justify-center md:items-center flex-col border rounded-md shadow-xl ">
+              <div className="p-2 flex md:justify-center md:items-center flex-col border rounded-md shadow-xl bg-white">
                 <Card className="py-4">
                   <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                     <p className="text-tiny uppercase font-bold">
@@ -278,7 +379,7 @@ export default function Home() {
                   </div>
                 </Card>
               </div>
-              <div className="p-2 flex md:justify-center md:items-center flex-col border rounded-md shadow-xl ">
+              <div className="p-2 flex md:justify-center md:items-center flex-col border rounded-md shadow-xl bg-white">
                 <Card className="py-4">
                   <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                     <p className="text-tiny uppercase font-bold ">Branding</p>
@@ -303,7 +404,7 @@ export default function Home() {
                   </div>
                 </Card>
               </div>
-              <div className="p-2 flex md:justify-center md:items-center flex-col border rounded-md shadow-xl ">
+              <div className="p-2 flex md:justify-center md:items-center flex-col border rounded-md shadow-xl bg-white">
                 <Card className="py-4">
                   <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                     <p className="text-tiny uppercase font-bold">Marketing</p>
@@ -332,7 +433,7 @@ export default function Home() {
           </div>
         </div>
         {/* <Solution /> */}
-        <div className="min-h-screen my-auto p-12 bg-[#FFF5E6]" id="solutions">
+        <div className="min-h-screen my-auto p-12 " id="solutions">
           <p className="text-2xl md:text-4xl font-medium md:mb-4 py-5 break-words text-wrap text-center">
             Solutions We Offer
           </p>
@@ -510,7 +611,7 @@ export default function Home() {
           </div>
         </div>
         {/* <ContactUs /> */}
-        <div id="contact" className="min-h-screen my-auto p-12">
+        <div id="contact" className="min-h-screen my-auto p-12 bg-[#FFF5E6]">
           <p className="text-2xl md:text-4xl font-medium md:mb-4 py-5 break-words text-wrap text-center">
             Get in touch
           </p>
@@ -652,35 +753,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* <main className="flex h-screen items-center justify-center my-auto bg-amber-500">
-        <div className="flex justify-center p-5 ">
-          <div>
-            <div className="flex flex-col items-center text-center gap-4">
-              <h2 className="text-3xl font-bold">We&rsquo;ll Be Right Back!</h2>
-              <p>
-                Our website is currently undergoing scheduled maintenance to
-                bring you an even better experience. We apologize for any
-                inconvenience and appreciate your patience.
-              </p>
-              <p>
-                If you have any urgent inquiries, please feel free to contact us
-                at{" "}
-                <a
-                  className="text-blue-500 hover:cursor-pointer"
-                  href="https://www.linkedin.com/company/craftwarelab"
-                  target="_blank"
-                >
-                  linkedin
-                </a>
-                .
-                <br />
-                Stay tuned for updates, and we&rsquo;ll be back online shortly!
-              </p>
-              <p>- The Craftwarelab Team</p>
-            </div>
-          </div>
-        </div>
-      </main> */}
         {/* <Footer /> */}
         <footer className="footer footer-center  w-full p-4 bg-black text-white">
           <div className="text-center">
