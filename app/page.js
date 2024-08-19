@@ -77,7 +77,7 @@ export default function Home() {
             </NavbarBrand>
             <NavbarItem>
               <Link color="foreground" href="#about">
-                About
+                About us
               </Link>
             </NavbarItem>
             <NavbarItem>
