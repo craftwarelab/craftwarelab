@@ -129,7 +129,7 @@ export default function Home() {
         </Navbar>
 
         {/* <MainHeader /> */}
-        <div className="flex items-center h-screen my-auto bg-[#FFF5E6]">
+        <div className="flex items-center min-h-screen my-auto bg-[#FFF5E6]">
           <div className="p-5 w-full">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-3 ">
               <div className="p-5 flex md:justify-center md:items-center flex-col">
